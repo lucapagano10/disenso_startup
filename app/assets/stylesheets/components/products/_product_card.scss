@@ -5,8 +5,8 @@
     img {
       width: 100%;
     }
-  }
 
+  }
   &_header {
     text-align: center;
     position: relative;
@@ -20,7 +20,7 @@
   }
 
   &_price {
-    color: $color-accent;
+    color: black;
     font-size: $font-size-small;
     font-weight: $font-weight-bold;
     text-align: center;
@@ -28,5 +28,11 @@
 
   &:hover &_image {
     transform: scale(1.1);
+  }
+  &:hover &_price .price.selling {
+    color: #db52b5;
+  }
+  &:hover &_header .info {
+    color: #db52b5;
   }
 }

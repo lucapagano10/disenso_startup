@@ -1,8 +1,23 @@
 <div class="top-bar">
   <figure class="logo">
-    <%= link_to image_tag(Spree::Config[:logo]), root_path %>
+    <%= link_to image_tag('disenso_logo.png'), root_path %>
   </figure>
+  <div class="header__primary-navigation">
+    <div class="category-navigation">
+    <%= 'Categorías' %>
+      <% categories = taxonomies.first %>
 
+      <nav class="categories top-bar-categories">
+        <% cache [I18n.locale, categories, taxon] do %>
+          <%= render(TaxonsTreeComponent.new(
+            root_taxon: categories.root,
+            current_taxon: taxon,
+            max_level: 1,
+            base_class: 'categories')) if categories %>
+        <% end %>
+      </nav>
+    </div>
+  </div>
   <div class="top-bar__search">
     <%= render 'shared/search/search_bar', taxons: taxons, taxon: taxon %>
   </div>

@@ -2,6 +2,7 @@
   @extend %section-spacings;
   @extend %section-wrapper;
 
+
   @include desktop {
     display: flex;
   }

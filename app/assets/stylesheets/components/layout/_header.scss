@@ -1,12 +1,14 @@
 .header {
-  border-bottom: 1px solid $color-border-light;
-
+  background-color: black;
   &__primary-navigation {
-    border-top: 1px solid $color-border-light;
+    border-top: 1px solid $color-border-dark;
+    background-color: $color-copy-bright;
   }
+
 
   &__secondary-navigation {
     margin: 0 auto;
     max-width: 114rem;
+
   }
 }

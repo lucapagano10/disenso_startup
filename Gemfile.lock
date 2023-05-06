@@ -85,6 +85,10 @@ GEM
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
+    bootstrap (5.2.3)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 2.11.6, < 3)
+      sassc-rails (>= 2.0.0)
     builder (3.2.4)
     cancancan (3.5.0)
     canonical-rails (0.2.14)
@@ -227,6 +231,7 @@ GEM
       ast (~> 2.4.1)
     paypalhttp (2.0.1)
     polyglot (0.3.5)
+    popper_js (2.11.7)
     psych (4.0.6)
       stringio
     public_suffix (5.0.1)
@@ -460,6 +465,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bootstrap (~> 5.2, >= 5.2.3)
   canonical-rails
   capybara
   capybara-screenshot (~> 1.0)
